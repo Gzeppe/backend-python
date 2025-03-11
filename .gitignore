@@ -1,5 +1,27 @@
+<<<<<<< HEAD
 # Byte-compiled / optimized / DLL files
 __pycache__/
+=======
+# Created by https://www.toptal.com/developers/gitignore/api/django
+# Edit at https://www.toptal.com/developers/gitignore?templates=django
+
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media
+
+# If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
+# in your Git repository. Update and uncomment the following line accordingly.
+# <django-project-name>/staticfiles/
+
+### Django.Python Stack ###
+# Byte-compiled / optimized / DLL files
+>>>>>>> 9b7c00e (add gitignore)
 *.py[cod]
 *$py.class
 
@@ -53,6 +75,7 @@ cover/
 
 # Translations
 *.mo
+<<<<<<< HEAD
 *.pot
 
 # Django stuff:
@@ -60,6 +83,10 @@ cover/
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
+=======
+
+# Django stuff:
+>>>>>>> 9b7c00e (add gitignore)
 
 # Flask stuff:
 instance/
@@ -94,12 +121,15 @@ ipython_config.py
 #   install all needed dependencies.
 #Pipfile.lock
 
+<<<<<<< HEAD
 # UV
 #   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
 #   This is especially recommended for binary packages to ensure reproducibility, and is more
 #   commonly ignored for libraries.
 #uv.lock
 
+=======
+>>>>>>> 9b7c00e (add gitignore)
 # poetry
 #   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
 #   This is especially recommended for binary packages to ensure reproducibility, and is more
@@ -112,10 +142,15 @@ ipython_config.py
 #pdm.lock
 #   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
 #   in version control.
+<<<<<<< HEAD
 #   https://pdm.fming.dev/latest/usage/project/#working-with-version-control
 .pdm.toml
 .pdm-python
 .pdm-build/
+=======
+#   https://pdm.fming.dev/#use-with-ide
+.pdm.toml
+>>>>>>> 9b7c00e (add gitignore)
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
 __pypackages__/
@@ -167,8 +202,12 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
+<<<<<<< HEAD
 # Ruff stuff:
 .ruff_cache/
 
 # PyPI configuration file
 .pypirc
+=======
+# End of https://www.toptal.com/developers/gitignore/api/django
+>>>>>>> 9b7c00e (add gitignore)
