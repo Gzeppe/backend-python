@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 
 def index(request):
-    return HttpResponse('Hello there')
+    return render(request, 'files/index.html')
 
 data = [
     {'name': 'image1.jpg', 'type':'jpg'},
