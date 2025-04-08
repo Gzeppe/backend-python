@@ -11,4 +11,10 @@
 {% else %}
     <p>Please upload some files!</p>
 {% endif %}
+<form action="{% url 'upload' %}" method="POST" enctype="multipart/form-data" >
+    {% csrf_token %}
+    {{form}}
+    <button>Upload</button>
+</form>
 {% endblock %}
+

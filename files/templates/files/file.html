@@ -1,8 +1,16 @@
 {% extends "files/site.html" %}
-{% block title %} File details {% endblock %}
+{% block title %} {{file.name}} {% endblock %}
 {% block body %}
-    <h1>{{file.name}}</h1>
-    <p>{{file.name}}</p>
-    <p>type:{{file.type}}</p>
+    <form action="{% url 'edit' file.id %}" method="POST">
+        {% csrf_token %}
+        <label for="name">File name:</label>
+        <input type="text" name="name" id="name" value="{{ file.name }}" />
+        <label for="type">File type:</label>
+        <input type="text" name="type" id="type" value="{{ file.file_type }}" />
+        <p>Uploaded: {{ file.upload_timestamp }}</p>
+        <button>Update</button>
+    </form>
+    <img src="{{ file.file.url }}"> 
+    <form action="{% url 'delete' file.id %}"><button>Delete</button></form>
     <a href="{% url 'files' %}">All files</a>
 {% endblock %}
